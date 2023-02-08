@@ -21,7 +21,11 @@
         @include('partials.header')
 
         <main>
-            @yield('main-content')
+            <section id="jumbotron">
+                <div class="background"></div>
+        
+                @yield('main-content')
+            </section>
         </main>
         
         @include('partials.footer')
