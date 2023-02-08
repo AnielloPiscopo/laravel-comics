@@ -1,0 +1,30 @@
+@import "../partials/variables.scss";
+
+#comics-container {
+    background-color: $secondary--color;
+    font-size: 0.7rem;
+
+    .btn,
+    .title {
+        background-color: $complementary--color;
+        display: inline-block;
+        padding: 0.7rem 0;
+
+        &.title {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .title.p-absolute {
+        bottom: calc(100% - 1.2rem);
+    }
+
+    a.btn {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        color: $primary--color;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+}

@@ -128,6 +128,16 @@ header {
     }
 }
 
+// ? MAIN
+main {
+    .background {
+        background-image: url("../assets/images/jumbotron.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+    }
+}
+
 // ? FOOTER
 footer {
     #navbar-container {

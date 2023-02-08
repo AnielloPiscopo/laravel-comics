@@ -12,7 +12,7 @@
 
         <!-- Styles -->
         @vite('resources/js/app.js')
-        @yield('styles');
+        @yield('styles')
     </head>
 
 
