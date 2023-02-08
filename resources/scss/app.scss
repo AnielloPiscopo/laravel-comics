@@ -1,1 +1,76 @@
-@import '~bootstrap/scss/bootstrap'
+@import "~bootstrap/scss/bootstrap";
+
+// * UNIVERSAL SELECTOR
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// * TAG HTML
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+// * CLASSI
+.d-flex {
+    display: flex;
+}
+
+.d-flex.justify-center {
+    justify-content: center;
+}
+
+.d-flex.justify-between {
+    justify-content: space-between;
+}
+
+.d-flex.justify-around {
+    justify-content: space-around;
+}
+
+.d-flex.align-center {
+    align-items: center;
+}
+
+.d-flex.wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex.column {
+    flex-direction: column;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.container {
+    padding: 1.2rem 15rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
