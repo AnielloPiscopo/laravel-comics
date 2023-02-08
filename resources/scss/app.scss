@@ -1,4 +1,6 @@
-@import "~bootstrap/scss/bootstrap";
+@import "partials/variables.scss";
+
+// @import "~bootstrap/scss/bootstrap";
 
 // * UNIVERSAL SELECTOR
 *,
@@ -73,4 +75,48 @@ a {
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+header {
+    background-color: $primary--color;
+
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    nav {
+        height: 100px;
+
+        .logo-container {
+            width: 60px;
+        }
+
+        ul {
+            height: 100%;
+
+            li {
+                margin-right: 2.3rem;
+                line-height: 100px;
+
+                &.active {
+                    border-bottom: 3px solid $complementary--color;
+
+                    a {
+                        color: $complementary--color;
+                    }
+                }
+
+                a {
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                    color: $darker--icon--bg-color;
+
+                    &:hover {
+                        color: $secondary--color;
+                    }
+                }
+            }
+        }
+    }
 }
