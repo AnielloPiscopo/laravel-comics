@@ -27,4 +27,21 @@
         font-weight: bold;
         margin-top: 1rem;
     }
+
+    .card {
+        width: calc(100% / 6 - 2rem);
+        margin: 1rem;
+
+        a {
+            color: $primary--color;
+        }
+
+        .img-container {
+            margin-bottom: 1rem;
+        }
+
+        &:hover img {
+            filter: contrast(1.5);
+        }
+    }
 }
