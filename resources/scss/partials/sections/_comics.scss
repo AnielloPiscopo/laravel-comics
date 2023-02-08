@@ -1,4 +1,4 @@
-@import "../partials/variables.scss";
+@import "../_variables.scss";
 
 #comics-container {
     background-color: $secondary--color;
@@ -12,7 +12,9 @@
 
         &.title {
             padding-left: 2rem;
+            font-size: 1.2rem;
             padding-right: 2rem;
+            color: $primary--color;
         }
     }
 
