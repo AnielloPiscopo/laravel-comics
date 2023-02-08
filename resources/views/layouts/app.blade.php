@@ -4,10 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel Comics</title>
+        <title>
+            @yield('title','Laravel Comics')
+        </title>
+
+        <link rel="icon" href="{{Vite::asset('resources/assets/images/favicon.ico')}}">
 
         <!-- Styles -->
         @vite('resources/js/app.js')
+        @yield('styles');
     </head>
 
 
