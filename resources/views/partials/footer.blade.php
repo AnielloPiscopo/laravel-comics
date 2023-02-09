@@ -52,7 +52,7 @@
                 ],
 ];
 
-$socialLinks= [
+    $socialLinks= [
                 [
                     'url'=> 'facebook',
                     'description'=> 'Facebook',

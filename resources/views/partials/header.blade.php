@@ -51,6 +51,8 @@
                 ],
             ]
 @endphp
+
+
 <header>
     <div class="container">
         <nav class="d-flex justify-between align-center">

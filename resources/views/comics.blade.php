@@ -44,7 +44,7 @@
     <div class="comics-container d-flex wrap">
         @foreach ($comics as $comic)
         <article class="card">
-            <a href="#">
+            <a href="{{route('comics') .$loop->iteration}}">
                 <div class="img-container">
                     <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}" title="{{$comic['series']}}">
                 </div>
