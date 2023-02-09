@@ -2,76 +2,66 @@
     $navItems = [
                 [
                     'text'=> 'Characters',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'characters',
                 ],
 
                 [
                     'text'=> 'Comics',
-                    'url'=> '#',
-                    'active'=> true,
+                    'url'=> 'comics',
                 ],
 
                 [
                     'text'=> 'Movies',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'movies',
                 ],
 
                 [
                     'text'=> 'TV',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'tv',
                 ],
 
                 [
                     'text'=> 'Games',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'games',
                 ],
 
                 [
                     'text'=> 'Collectibles',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'collectibles',
                 ],
 
                 [
                     'text'=> 'Videos',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'videos',
                 ],
 
                 [
                     'text'=> 'Fans',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'fans',
                 ],
 
                 [
                     'text'=> 'News',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'news',
                 ],
 
                 [
                     'text'=> 'Shop',
-                    'url'=> '#',
-                    'active'=> false,
+                    'url'=> 'shop',
                 ],
             ]
 @endphp
 <header>
     <div class="container">
         <nav class="d-flex justify-between align-center">
-            <a class="logo-container" href="#">
+            <a class="logo-container" href="{{route('home')}}">
                 <img src="{{Vite::asset('resources/assets/images/dc-logo.png')}}" alt="logo" title="logo">
             </a>
 
-            <ul class="d-flex">
+            <ul class="d-flex wrap">
                 @foreach ($navItems as $navItem)
-                <li class="text-uppercase d-flex">
-                    <a href="{{$navItem['url']}}" alt="{{ $navItem['text'] }}">{{ $navItem['text'] }}</a>
+                <li class="text-uppercase d-flex {{(Request::route()->getName() === $navItem['url']) ? 'active' : ''}}">
+                    <a href="{{route($navItem['url'])}}" alt="{{ $navItem['text'] }}">{{ $navItem['text'] }}</a>
                 </li>
                 @endforeach
             </ul>
