@@ -1,49 +1,75 @@
 @import "../_variables.scss";
 
-#comics-container {
-    background-color: $secondary--color;
-    font-size: 0.7rem;
+main {
+    #comics-container {
+        background-color: $secondary--color;
+        font-size: 0.7rem;
 
-    .btn,
-    .title {
+        .btn,
+        .title {
+            background-color: $complementary--color;
+            display: inline-block;
+            padding: 0.7rem 0;
+
+            &.title {
+                padding-left: 2rem;
+                font-size: 1.2rem;
+                padding-right: 2rem;
+                color: $primary--color;
+            }
+        }
+
+        .title.p-absolute {
+            bottom: calc(100% - 1.2rem);
+        }
+
+        a.btn {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            color: $primary--color;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .card {
+            width: calc(100% / 6 - 2rem);
+            margin: 1rem;
+
+            a {
+                color: $primary--color;
+            }
+
+            .img-container {
+                margin-bottom: 1rem;
+            }
+
+            &:hover img {
+                filter: contrast(1.5);
+            }
+        }
+    }
+
+    nav {
         background-color: $complementary--color;
-        display: inline-block;
-        padding: 0.7rem 0;
 
-        &.title {
-            padding-left: 2rem;
-            font-size: 1.2rem;
-            padding-right: 2rem;
-            color: $primary--color;
-        }
-    }
+        ul {
+            padding: 1.2rem 0;
 
-    .title.p-absolute {
-        bottom: calc(100% - 1.2rem);
-    }
+            img {
+                width: 37px;
+                margin-right: 1rem;
+            }
 
-    a.btn {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        color: $primary--color;
-        font-weight: bold;
-        margin-top: 1rem;
-    }
+            li {
+                &:hover img {
+                    filter: brightness(2);
+                }
 
-    .card {
-        width: calc(100% / 6 - 2rem);
-        margin: 1rem;
-
-        a {
-            color: $primary--color;
-        }
-
-        .img-container {
-            margin-bottom: 1rem;
-        }
-
-        &:hover img {
-            filter: contrast(1.5);
+                a {
+                    font-size: 0.7rem;
+                    color: $primary--color;
+                }
+            }
         }
     }
 }

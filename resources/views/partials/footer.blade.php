@@ -1,4 +1,6 @@
 @php
+    $imgsPath = 'resources/assets/images/footer-';
+
     $navSections= [
                 [
                     'title'=> 'Dc Comics',
@@ -107,11 +109,8 @@ $socialLinks= [
         <div class="social-links-container d-flex align-center">
             <span class="text-uppercase">Follow Us</span>
             <ul class="d-flex">
-                {{-- <li v-for="socialLink in socialLinks"><a href="#"><img :src="getImgPath(socialLink.url)"
-                            :alt="socialLink.description + '\'s icon'" :title="socialLink.description + '\'s icon'"></a>
-                </li> --}}
                 @foreach ($socialLinks as $socialLink)
-                <li><a href="#"><img src="{{Vite::asset('resources/assets/images/footer-' . $socialLink['url'] . '.png')}}"></a>
+                <li><a href="#"><img src="{{Vite::asset($imgsPath . $socialLink['url'] . '.png')}}"></a>
                 </li>
                     
                 @endforeach
