@@ -86,11 +86,11 @@
 
 
 <footer>
-    <section id="navbar-container" class="container d-flex">
-        <nav class="d-flex wrap column">
+    <section id="navbar-container" class="my_container my_d-flex">
+        <nav class="my_d-flex my_wrap my_column">
             @foreach ($navSections as $navSection)
-            <div class="nav-item">
-                <span class="text-uppercase title">{{ $navSection['title'] }}</span>
+            <div class="my_nav-item">
+                <span class="my_text-uppercase my_title">{{ $navSection['title'] }}</span>
                 <ul>
                     @foreach ($navSection['navItems'] as $navItem)
                     <li><a href="#" alt="{{$navItem}}">{{ $navItem }}</a></li>
@@ -100,15 +100,15 @@
             @endforeach
         </nav>
 
-        <div class="img-container">
+        <div class="my_img-container">
         </div>
     </section>
 
-    <section id="social-links" class="container d-flex justify-between">
-        <a href="" class="btn text-uppercase d-flex align-center">Sign-Up Now!</a>
-        <div class="social-links-container d-flex align-center">
-            <span class="text-uppercase">Follow Us</span>
-            <ul class="d-flex">
+    <section id="social-links" class="my_container my_d-flex my_justify-between">
+        <a href="#" class="my_btn my_text-uppercase my_d-flex my_align-center">Sign-Up Now!</a>
+        <div class="my_social-links-container my_d-flex my_align-center">
+            <span class="my_text-uppercase">Follow Us</span>
+            <ul class="my_d-flex">
                 @foreach ($socialLinks as $socialLink)
                 <li><a href="#"><img src="{{Vite::asset($imgsPath . $socialLink['url'] . '.png')}}"></a>
                 </li>

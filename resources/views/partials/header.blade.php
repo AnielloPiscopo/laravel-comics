@@ -54,15 +54,15 @@
 
 
 <header>
-    <div class="container">
-        <nav class="d-flex justify-between align-center">
-            <a class="logo-container" href="{{route('home')}}">
+    <div class="my_container">
+        <nav class="my_d-flex my_justify-between my_align-center">
+            <a class="my_logo-container" href="{{route('home')}}">
                 <img src="{{Vite::asset('resources/assets/images/dc-logo.png')}}" alt="logo" title="logo">
             </a>
 
-            <ul class="d-flex wrap">
+            <ul class="my_d-flex my_wrap">
                 @foreach ($navItems as $navItem)
-                <li class="text-uppercase d-flex {{(Request::route()->getName() === $navItem['url']) ? 'active' : ''}}">
+                <li class="my_text-uppercase my_d-flex {{(Request::route()->getName() === $navItem['url']) ? 'my_active' : ''}}">
                     <a href="{{route($navItem['url'])}}" alt="{{ $navItem['text'] }}">{{ $navItem['text'] }}</a>
                 </li>
                 @endforeach

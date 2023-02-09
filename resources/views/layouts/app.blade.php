@@ -22,7 +22,7 @@
 
         <main>
             <section id="jumbotron">
-                <div class="background"></div>
+                <div class="my_background"></div>
         
                 @yield('main-content')
             </section>

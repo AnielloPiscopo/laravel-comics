@@ -38,32 +38,32 @@
         ]
 @endphp
 
-<section id="comics-container" class="container p-relative">
-    <h2 class="title text-uppercase p-absolute">Current Series</h2>
+<section id="comics-container" class="my_container my_p-relative">
+    <h2 class="my_title my_text-uppercase my_p-absolute">Current Series</h2>
 
-    <div class="comics-container d-flex wrap">
+    <div class="my_comics-container my_d-flex my_wrap">
         @foreach ($comics as $comic)
-        <article class="card">
+        <article class="my_card">
             <a href="{{route('comics') .$loop->iteration}}">
-                <div class="img-container">
+                <div class="my_img-container">
                     <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}" title="{{$comic['series']}}">
                 </div>
-                <span class="text-uppercase">{{ $comic['series'] }}</span>
+                <span class="my_text-uppercase">{{ $comic['series'] }}</span>
             </a>
         </article>
         @endforeach
     </div>
 
-    <div class="btn-container d-flex justify-center">
-        <a href="#" class="btn text-uppercase">Load More</a>
+    <div class="my_btn-container my_d-flex my_justify-center">
+        <a href="#" class="my_btn my_text-uppercase">Load More</a>
     </div>
 </section>
 
-<nav class="container">
-    <ul class="d-flex justify-around align-center">
+<nav class="my_container">
+    <ul class="my_d-flex my_justify-around my_align-center">
         @foreach ($navItems as $navItem)
         <li>
-            <a href="#" class="d-flex align-center text-uppercase">
+            <a href="#" class="my_d-flex my_align-center my_text-uppercase">
                 <img src="{{Vite::asset($imgsPath . $navItem['src'])}}" alt="{{$navItem['text']}}">
                 <span>{{ $navItem['text'] }}</span>
             </a>

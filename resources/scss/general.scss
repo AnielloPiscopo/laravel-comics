@@ -1,0 +1,76 @@
+// * ------------------------------------------------------------- GENERAL IMPORTS
+
+@import "partials/variables.scss";
+
+// * ------------------------------------------------------------- GENERAL STYLES
+
+// ? UNIVERSAL SELECTOR
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ? TAG HTML
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+// ? CLASSI
+.my_d-flex {
+    display: flex;
+
+    &.my_justify-center {
+        justify-content: center;
+    }
+
+    &.my_justify-between {
+        justify-content: space-between;
+    }
+
+    &.my_justify-around {
+        justify-content: space-around;
+    }
+
+    &.my_align-center {
+        align-items: center;
+    }
+
+    &.my_wrap {
+        flex-wrap: wrap;
+    }
+
+    &.my_column {
+        flex-direction: column;
+    }
+}
+
+.my_p-relative {
+    position: relative;
+}
+
+.my_p-absolute {
+    position: absolute;
+}
+
+.my_text-uppercase {
+    text-transform: uppercase;
+}

@@ -2,83 +2,10 @@
 
 @import "partials/variables.scss";
 
-// @import "~bootstrap/scss/bootstrap";
+// * ------------------------------------------------------------- CLASSES STYLES
 
-// * ------------------------------------------------------------- GENERAL STYLES
-
-// ? UNIVERSAL SELECTOR
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-// ? TAG HTML
-body {
-    font-family: sans-serif;
-}
-
-img {
-    max-width: 100%;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-
-    &:hover {
-        font-weight: bold;
-    }
-}
-
-// ? CLASSI
-.d-flex {
-    display: flex;
-
-    &.justify-center {
-        justify-content: center;
-    }
-
-    &.justify-between {
-        justify-content: space-between;
-    }
-
-    &.justify-around {
-        justify-content: space-around;
-    }
-
-    &.align-center {
-        align-items: center;
-    }
-
-    &.wrap {
-        flex-wrap: wrap;
-    }
-
-    &.column {
-        flex-direction: column;
-    }
-}
-
-.p-relative {
-    position: relative;
-}
-
-.p-absolute {
-    position: absolute;
-}
-
-.container {
+.my_container {
     padding: 1.2rem 15rem;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
 }
 
 // * ------------------------------------------------------------- SPECIFIC STYLES
@@ -87,7 +14,7 @@ a {
 header {
     background-color: $primary--color;
 
-    .container {
+    .my_container {
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -95,7 +22,7 @@ header {
     nav {
         height: 100px;
 
-        .logo-container {
+        .my_logo-container {
             width: 60px;
         }
 
@@ -106,7 +33,7 @@ header {
                 margin-right: 2.3rem;
                 line-height: 97px;
 
-                &.active {
+                &.my_active {
                     border-bottom: 3px solid $complementary--color;
 
                     a {
@@ -130,7 +57,7 @@ header {
 
 // ? MAIN
 main {
-    .background {
+    .my_background {
         background-image: url("../assets/images/jumbotron.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -150,12 +77,12 @@ footer {
             width: 50%;
         }
 
-        &.container {
+        &.my_container {
             padding-top: 0;
             padding-bottom: 0;
         }
 
-        .img-container {
+        .my_img-container {
             background-image: url("../assets/img/dc-logo-bg.png");
             background-repeat: no-repeat;
             background-size: cover;
@@ -166,10 +93,10 @@ footer {
         nav {
             padding: 1.5rem 0;
 
-            .nav-item {
+            .my_nav-item {
                 margin: 1rem 0;
 
-                .title {
+                .my_title {
                     font-weight: bold;
                     color: $primary--color;
                 }
@@ -214,7 +141,7 @@ footer {
             color: $complementary--color;
         }
 
-        .btn {
+        .my_btn {
             padding: 0.7rem;
             border: 2px solid $complementary--color;
             font-size: 0.9rem;
