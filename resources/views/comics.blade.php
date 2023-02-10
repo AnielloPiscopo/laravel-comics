@@ -41,10 +41,10 @@
 <section id="comics-container" class="my_container my_p-relative">
     <h2 class="my_title my_text-uppercase my_p-absolute">Current Series</h2>
 
-    <div class="my_comics-container my_d-flex my_wrap">
+    <div class="my_cards-container my_d-flex my_wrap">
         @foreach ($comics as $comic)
         <article class="my_card">
-            <a href="{{route('comics') .$loop->iteration}}">
+            <a href="{{route(Request::route()->getName()) . '/comic-' .$loop->iteration}}">
                 <div class="my_img-container">
                     <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}" title="{{$comic['series']}}">
                 </div>
@@ -63,7 +63,7 @@
     <ul class="my_d-flex my_justify-around my_align-center">
         @foreach ($navItems as $navItem)
         <li>
-            <a href="#" class="my_d-flex my_align-center my_text-uppercase">
+            <a href="{{route(Request::route()->getName()) . '/element-' .$loop->iteration}}" class="my_d-flex my_align-center my_text-uppercase">
                 <img src="{{Vite::asset($imgsPath . $navItem['src'])}}" alt="{{$navItem['text']}}">
                 <span>{{ $navItem['text'] }}</span>
             </a>
