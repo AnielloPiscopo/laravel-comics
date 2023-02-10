@@ -12,7 +12,15 @@
 
 // ? HEADER
 header {
-    background-color: $primary--color;
+    aside {
+        background-color: $complementary--color;
+        span {
+            font-size: 0.7rem;
+            color: $primary--color;
+            cursor: pointer;
+            padding: 0.3rem 0 0.3rem 5rem;
+        }
+    }
 
     .my_container {
         padding-top: 0;
@@ -20,6 +28,7 @@ header {
     }
 
     nav {
+        background-color: $primary--color;
         height: 100px;
 
         .my_logo-container {
@@ -83,39 +92,54 @@ footer {
         }
 
         .my_img-container {
-            background-image: url("../assets/img/dc-logo-bg.png");
+            background-image: url("../assets/images/dc-logo-bg.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             padding: 0;
         }
 
-        nav {
-            padding: 1.5rem 0;
+        .my_left-content {
+            padding: 1.5rem 0 2rem 0;
 
-            .my_nav-item {
-                margin: 1rem 0;
+            nav {
+                height: 90%;
 
-                .my_title {
-                    font-weight: bold;
-                    color: $primary--color;
-                }
+                .my_nav-item {
+                    margin: 1rem 0;
+                    width: calc(100% / 3);
 
-                li {
-                    font-size: 0.7rem;
-                    padding-bottom: 0.2rem;
-
-                    &:first-of-type {
-                        padding-top: 0.7rem;
+                    .my_title {
+                        font-weight: bold;
+                        color: $primary--color;
                     }
 
-                    a {
-                        color: $icon--bg-color;
+                    li {
+                        font-size: 0.7rem;
+                        padding-bottom: 0.2rem;
 
-                        &:hover {
-                            color: $primary--color;
+                        &:first-of-type {
+                            padding-top: 0.7rem;
+                        }
+
+                        a {
+                            color: $icon--bg-color;
+
+                            &:hover {
+                                color: $primary--color;
+                            }
                         }
                     }
+                }
+            }
+
+            p {
+                font-size: 0.7rem;
+                color: $icon--bg-color;
+                margin-bottom: 3rem;
+
+                a {
+                    color: $complementary--color;
                 }
             }
         }

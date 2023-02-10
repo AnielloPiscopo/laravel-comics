@@ -87,20 +87,23 @@
 
 <footer>
     <section id="navbar-container" class="my_container my_d-flex">
-        <nav class="my_d-flex my_wrap my_column">
-            @foreach ($navSections as $navSection)
-            <div class="my_nav-item">
-                <span class="my_text-uppercase my_title">{{ $navSection['title'] }}</span>
-                <ul>
-                    @foreach ($navSection['navItems'] as $navItem)
-                    <li><a href="#" alt="{{$navItem}}">{{ $navItem }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-            @endforeach
-        </nav>
+        <div class="my_left-content my_d-flex my_column">
+            <nav class="my_d-flex my_wrap my_column">
+                @foreach ($navSections as $navSection)
+                <div class="my_nav-item">
+                    <span class="my_text-uppercase my_title">{{ $navSection['title'] }}</span>
+                    <ul>
+                        @foreach ($navSection['navItems'] as $navItem)
+                        <li><a href="#" alt="{{$navItem}}">{{ $navItem }}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endforeach
+            </nav>
+            <p>All Site Content TM and &#169; 2020 DC Entertainment , unless otherwise <a href="#">noted here</a>.All rights reserved. <a href="#">Cookies Settings</a></p>
+        </div>
 
-        <div class="my_img-container">
+        <div class="my_img-container my_right-content">
         </div>
     </section>
 

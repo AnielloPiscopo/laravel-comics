@@ -54,19 +54,26 @@
 
 
 <header>
-    <div class="my_container">
-        <nav class="my_d-flex my_justify-between my_align-center">
-            <a class="my_logo-container" href="{{route('home')}}">
-                <img src="{{Vite::asset('resources/assets/images/dc-logo.png')}}" alt="logo" title="logo">
-            </a>
+    <aside class="my_d-flex my_justify-end my_container">
+        <span>
+            DC POWER&#8480; VISA&#174;
+        </span>
+        <span>
+            ADDITIONAL DC SITES
+        </span>
+    </aside>
 
-            <ul class="my_d-flex my_wrap">
-                @foreach ($navItems as $navItem)
-                <li class="my_text-uppercase my_d-flex {{(Request::route()->getName() === $navItem['url']) ? 'my_active' : ''}}">
-                    <a href="{{route($navItem['url'])}}" alt="{{ $navItem['text'] }}">{{ $navItem['text'] }}</a>
-                </li>
-                @endforeach
-            </ul>
-        </nav>
-    </div>
+    <nav class="my_d-flex my_justify-between my_align-center my_container">
+        <a class="my_logo-container" href="{{route('home')}}">
+            <img src="{{Vite::asset('resources/assets/images/dc-logo.png')}}" alt="logo" title="logo">
+        </a>
+
+        <ul class="my_d-flex my_wrap">
+            @foreach ($navItems as $navItem)
+            <li class="my_text-uppercase my_d-flex {{(Request::route()->getName() === $navItem['url']) ? 'my_active' : ''}}">
+                <a href="{{route($navItem['url'])}}" alt="{{ $navItem['text'] }}">{{ $navItem['text'] }}</a>
+            </li>
+            @endforeach
+        </ul>
+    </nav>
 </header>
