@@ -7,11 +7,7 @@
 |
 */
 
-// * ------------------------------------------------------------- GENERAL IMPORTS
-
-@import "partials/variables.scss";
-
-// * ------------------------------------------------------------- GENERAL STYLES
+// * GENERAL STYLES
 
 // ? UNIVERSAL SELECTOR
 *,
@@ -23,10 +19,6 @@
 }
 
 // ? TAG HTML
-body {
-    font-family: sans-serif;
-}
-
 img {
     max-width: 100%;
 }
@@ -37,10 +29,6 @@ ul {
 
 a {
     text-decoration: none;
-
-    &:hover {
-        font-weight: bold;
-    }
 }
 
 input:focus {

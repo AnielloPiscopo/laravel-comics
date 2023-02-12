@@ -8,24 +8,29 @@
 |
 */
 
-// * ------------------------------------------------------------- GENERAL IMPORTS
+// * IMPORTS
 @use "partials/variables.scss" as *;
 @use "partials/header.scss" as *;
 @use "partials/footer.scss" as *;
 
-// * ------------------------------------------------------------- TAG STYLES
+// * TAG STYLES
 
 body {
     min-width: 1450px;
+    font-family: sans-serif;
 }
 
-// * ------------------------------------------------------------- CLASSES STYLES
+a:hover {
+    font-weight: bold;
+}
+
+// * CLASSES STYLES
 
 .my_container {
     padding: 1.2rem 12rem;
 }
 
-// * ------------------------------------------------------------- SPECIFIC STYLES
+// * SPECIFIC STYLES
 
 // ? MAIN
 main {
