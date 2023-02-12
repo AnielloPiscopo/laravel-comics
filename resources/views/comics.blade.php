@@ -1,3 +1,13 @@
+/*
+|--------------------------------------------------------------------------
+| Comics
+|--------------------------------------------------------------------------
+|
+| This is the 'Comics' section of the website
+| available to the guest.
+|
+*/
+
 @extends('layouts.app')
 
 @section('title','Laravel Comics - Comics')
