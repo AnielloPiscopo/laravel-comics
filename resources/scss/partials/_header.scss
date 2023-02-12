@@ -7,11 +7,10 @@
 |
 */
 
-// * ------------------------------------------------------------- GENERAL IMPORTS
-
+// * GENERAL IMPORTS
 @use "./variables.scss" as *;
 
-// ? HEADER
+// * HEADER
 header {
     aside {
         background-color: $complementary--color;

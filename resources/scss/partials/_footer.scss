@@ -7,11 +7,10 @@
 |
 */
 
-// * ------------------------------------------------------------- GENERAL IMPORTS
-
+// * GENERAL IMPORTS
 @use "./variables.scss" as *;
 
-// ? FOOTER
+// * FOOTER
 footer {
     #navbar-container {
         background-image: url("../assets/images/footer-bg.jpg");

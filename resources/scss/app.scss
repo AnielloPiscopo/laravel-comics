@@ -9,12 +9,12 @@
 */
 
 // * ------------------------------------------------------------- GENERAL IMPORTS
-
 @use "partials/variables.scss" as *;
 @use "partials/header.scss" as *;
 @use "partials/footer.scss" as *;
 
 // * ------------------------------------------------------------- TAG STYLES
+
 body {
     min-width: 1450px;
 }
