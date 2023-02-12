@@ -62,5 +62,14 @@ header {
                 }
             }
         }
+
+        input {
+            color: $secondary--color;
+            border: none;
+            border-bottom: 3px solid $complementary--color;
+            font-weight: bold;
+            font-size: 0.7rem;
+            padding: 0 1rem 0.2rem 0;
+        }
     }
 }

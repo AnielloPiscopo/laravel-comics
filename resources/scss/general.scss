@@ -43,6 +43,11 @@ a {
     }
 }
 
+input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
 // ? CLASSI
 .my_d-flex {
     display: flex;
@@ -86,4 +91,8 @@ a {
 
 .my_text-uppercase {
     text-transform: uppercase;
+}
+
+.my_text-end {
+    text-align: end;
 }

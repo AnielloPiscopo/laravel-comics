@@ -84,5 +84,7 @@
             </li>
             @endforeach
         </ul>
+
+        <input type="text" name="" id="" placeholder='Search' class="my_text-end">
     </nav>
 </header>
