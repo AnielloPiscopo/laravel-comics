@@ -84,5 +84,5 @@
 @endsection
 
 @section('styles')
-<link rel="stylesheet" href="{{Vite::asset('resources/scss/partials/sections/_comics.scss')}}">
+<link rel="stylesheet" href="{{Vite::asset('resources/scss/partials/pages/_comics.scss')}}">
 @endsection
